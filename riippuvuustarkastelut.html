@@ -7,16 +7,16 @@
 <title>Riippuvuustarkastelut | Etusivu</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/custom.70e5aa69.css">
+<link rel="preload" as="style" href="./_import/custom.47a3f41e.css">
 <link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/custom.70e5aa69.css">
+<link rel="stylesheet" type="text/css" href="./_import/custom.47a3f41e.css">
 <link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
 <link rel="modulepreload" href="./_observablehq/client.455af412.js">
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.313a6eb4.js">
-<link rel="modulepreload" href="./_import/components/data_indikaattori.3e59e552.js">
-<link rel="modulepreload" href="./_import/components/alueprofiilit.f5d16b7a.js">
+<link rel="modulepreload" href="./_import/components/data_indikaattori.ba3f29a9.js">
+<link rel="modulepreload" href="./_import/components/alueprofiilit.7bd422a9.js">
 <link rel="modulepreload" href="./_observablehq/stdlib/inputs.c9e8879a.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/bab36a37.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
@@ -67,16 +67,16 @@
 import {define} from "./_observablehq/client.455af412.js";
 import {registerFile} from "./_observablehq/stdlib.313a6eb4.js";
 
-registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.d39c2513.csv","lastModified":1741949635826,"size":2398242});
-registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.d6897c57.csv","lastModified":1741949637965,"size":31089699});
-registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741949643457,"size":50473});
-registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741949634453,"size":10701});
-registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.00d599ff.json","lastModified":1741949641784,"size":38750});
-registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.4b719856.json","lastModified":1741949649443,"size":62206});
-registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741949640243,"size":257003});
+registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.d39c2513.csv","lastModified":1741976618043,"size":2398242});
+registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.d6897c57.csv","lastModified":1741976620923,"size":31089699});
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741976628324,"size":50473});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741976616117,"size":10701});
+registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.7358a0aa.json","lastModified":1741976626069,"size":38624});
+registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.4b719856.json","lastModified":1741976636643,"size":62206});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741976624079,"size":257003});
 
 define({id: "8ac3309a", outputs: ["df","df_aikasarja","indicator_list","region_levels","SelYear","InputRegioLevel","df_region","financial","financial1","df_kuntalist","all_var_class","df2","unsafe_html"], body: async () => {
-const [{df, df_aikasarja, indicator_list, region_levels, SelYear, InputRegioLevel, df_region, financial, financial1, df_kuntalist, all_var_class, df2}, {unsafe_html}] = await Promise.all([import("./_import/components/data_indikaattori.3e59e552.js"), import("./_import/components/alueprofiilit.f5d16b7a.js")]);
+const [{df, df_aikasarja, indicator_list, region_levels, SelYear, InputRegioLevel, df_region, financial, financial1, df_kuntalist, all_var_class, df2}, {unsafe_html}] = await Promise.all([import("./_import/components/data_indikaattori.ba3f29a9.js"), import("./_import/components/alueprofiilit.7bd422a9.js")]);
 
 return {df,df_aikasarja,indicator_list,region_levels,SelYear,InputRegioLevel,df_region,financial,financial1,df_kuntalist,all_var_class,df2,unsafe_html};
 }});
@@ -434,18 +434,18 @@ var metaY = df_muuttujakuvaukset.filter(d => d.variable == selected_variableY)
 return {metaX,metaY};
 }});
 
-define({id: "ee4989fb", inputs: ["unsafe_html","metaX","metaY","display"], body: async (unsafe_html,metaX,metaY,display) => {
+define({id: "49f7d3db", inputs: ["unsafe_html","metaX","metaY","display"], body: async (unsafe_html,metaX,metaY,display) => {
 display(await(
 unsafe_html`
 <div class="grid grid-cols-2">
-<div class="note" label = "Metatiedot vaaka-akseli">
+<div class="note metanote" label = "Metatiedot vaaka-akseli">
 ${metaX[0].link}
 <br/>
 <br/>
 <em>${metaX[0].description}</em>
 </div>
 
-<div class="note" label = "Metatiedot pystyakseli">
+<div class="note metanote" label = "Metatiedot pystyakseli">
 ${metaY[0].link}
 <br/>
 <br/>
@@ -551,7 +551,7 @@ ${metaY[0].link}
 <div class="observablehq observablehq--block"><!--:12ee04aa:--></div>
 <hr>
 <h2 id="metatiedot" tabindex="-1"><a class="observablehq-header-anchor" href="#metatiedot">Metatiedot</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ee4989fb:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:49f7d3db:--></div>
 <script defer="" data-domain="karttasovellus.diak.fi" src="https://plausible.vaphana.com/js/script.js"></script>
 </main>
 <footer id="observablehq-footer">

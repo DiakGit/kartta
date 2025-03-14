@@ -7,16 +7,16 @@
 <title>Indikaattorivertailu | Etusivu</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/custom.70e5aa69.css">
+<link rel="preload" as="style" href="./_import/custom.47a3f41e.css">
 <link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/custom.70e5aa69.css">
+<link rel="stylesheet" type="text/css" href="./_import/custom.47a3f41e.css">
 <link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
 <link rel="modulepreload" href="./_observablehq/client.455af412.js">
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.313a6eb4.js">
-<link rel="modulepreload" href="./_import/components/data_indikaattori.3e59e552.js">
-<link rel="modulepreload" href="./_import/components/alueprofiilit.f5d16b7a.js">
+<link rel="modulepreload" href="./_import/components/data_indikaattori.ba3f29a9.js">
+<link rel="modulepreload" href="./_import/components/alueprofiilit.7bd422a9.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/2d3d6de5.js">
 <link rel="modulepreload" href="./_observablehq/stdlib/inputs.c9e8879a.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/bab36a37.js">
@@ -67,16 +67,16 @@
 import {define} from "./_observablehq/client.455af412.js";
 import {registerFile} from "./_observablehq/stdlib.313a6eb4.js";
 
-registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.d39c2513.csv","lastModified":1741949635826,"size":2398242});
-registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.d6897c57.csv","lastModified":1741949637965,"size":31089699});
-registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741949643457,"size":50473});
-registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741949634453,"size":10701});
-registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.00d599ff.json","lastModified":1741949641784,"size":38750});
-registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.4b719856.json","lastModified":1741949649443,"size":62206});
-registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741949640243,"size":257003});
+registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.d39c2513.csv","lastModified":1741976618043,"size":2398242});
+registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.d6897c57.csv","lastModified":1741976620923,"size":31089699});
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741976628324,"size":50473});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741976616117,"size":10701});
+registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.7358a0aa.json","lastModified":1741976626069,"size":38624});
+registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.4b719856.json","lastModified":1741976636643,"size":62206});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741976624079,"size":257003});
 
 define({id: "242ceb10", outputs: ["df","InputRegioLevel","indicator_list","SelYear","df_aikasarja","region_levels","financial1","df_region","df_kuntalist","all_var_class","unsafe_html"], body: async () => {
-const [{df, InputRegioLevel, indicator_list, SelYear, df_aikasarja, region_levels, financial1, df_region, df_kuntalist, all_var_class}, {unsafe_html}] = await Promise.all([import("./_import/components/data_indikaattori.3e59e552.js"), import("./_import/components/alueprofiilit.f5d16b7a.js")]);
+const [{df, InputRegioLevel, indicator_list, SelYear, df_aikasarja, region_levels, financial1, df_region, df_kuntalist, all_var_class}, {unsafe_html}] = await Promise.all([import("./_import/components/data_indikaattori.ba3f29a9.js"), import("./_import/components/alueprofiilit.7bd422a9.js")]);
 
 return {df,InputRegioLevel,indicator_list,SelYear,df_aikasarja,region_levels,financial1,df_region,df_kuntalist,all_var_class,unsafe_html};
 }});
@@ -86,9 +86,9 @@ const df_muuttujakuvaukset = await FileAttachment("./data/df_muuttujakuvaukset.j
 return {df_muuttujakuvaukset};
 }});
 
-define({id: "d965afd2", inputs: ["unsafe_html","meta","display"], body: async (unsafe_html,meta,display) => {
+define({id: "f101f2ba", inputs: ["unsafe_html","meta","display"], body: async (unsafe_html,meta,display) => {
 display(await(
-unsafe_html`<div class="note" label = "Metatiedot">
+unsafe_html`<div class="note metanote" label = "Metatiedot">
 ${meta[0].link}
 <br/>
 <br/>
@@ -257,7 +257,7 @@ tolppa
 ))
 }});
 
-define({id: "763a6706", inputs: ["Plot","df_region","selected_variable","selected_regio_level","selectedYear","df_region_ss","financial1","map_values","df_region_ss_select"], outputs: ["kartta"], body: (Plot,df_region,selected_variable,selected_regio_level,selectedYear,df_region_ss,financial1,map_values,df_region_ss_select) => {
+define({id: "2cc38a81", inputs: ["Plot","df_region","selected_variable","selected_regio_level","selectedYear","df_region_ss","financial1","map_values","df_region_ss_select"], outputs: ["kartta"], body: (Plot,df_region,selected_variable,selected_regio_level,selectedYear,df_region_ss,financial1,map_values,df_region_ss_select) => {
 //${
  function kartta(width,height){ 
 return Plot.plot({
@@ -296,7 +296,16 @@ Plot.geo(df_region_ss_select,
           strokeWidth: 2, 
           tip: false,
           fill: (d) => map_values.get(d.properties.region_code)}
-          )
+          ) ,
+              Plot.tip(df_region_ss_select, 
+              Plot.geoCentroid({title: (d) => d.properties.region_name + 
+                                              "\n" + 
+                                              financial1(map_values.get(d.properties.region_code)), 
+                                    anchor: "bottom",
+                                    fillOpacity: 1,
+                                    strokeOpacity: .8,
+                                    stroke: "#000",
+                                    textPadding: 3})) 
              ],
 
              
@@ -543,9 +552,10 @@ return {aikasarja};
 <main id="observablehq-main" class="observablehq">
 <div class="observablehq observablehq--block"><!--:242ceb10:--></div>
 <div class="observablehq observablehq--block"><!--:19560720:--></div>
-<div class="grid grid-cols-3">
-<div class="grid grid-colspan-2">
-<h1>Indikaattorivertailu</h1>
+<div class="grid grid-cols-2">
+<!--div class="grid grid-colspan-2"-->
+<div>
+<h1 id="indikaattorivertailu" tabindex="-1"><a class="observablehq-header-anchor" href="#indikaattorivertailu">Indikaattorivertailu</a></h1>
 <p><strong>Indikaattorivertailun</strong> <em>valitse muuttujaluokka</em> -valikosta voit säädellä haluatko katsoa huono-osaisuuden summatietoja vai tarkemmin kunkin huono-osaisuuden ulottuvuuden osoittimia. <strong>Valitse muuttuja</strong> -valikosta voit valita tarkemman osoittimen ja <strong>valitse aluetaso</strong> -valikosta aluetason.
 Voit myös valita, näkyykö piste-, kartta- ja aikasarjakuviossa:</p>
 <ul>
@@ -554,7 +564,7 @@ Voit myös valita, näkyykö piste-, kartta- ja aikasarjakuviossa:</p>
 <li>valitun hyvinvointialueen kunnat</li>
 </ul>
 </div>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:d965afd2:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f101f2ba:--></div>
 </div>
 <div class="observablehq observablehq--block"><!--:5e4ea3fb:--></div>
 <div class="observablehq observablehq--block"><!--:9e01d9de:--></div>
@@ -594,7 +604,7 @@ Voit myös valita, näkyykö piste-, kartta- ja aikasarjakuviossa:</p>
   <observablehq-loading></observablehq-loading><!--:7ff6d850:-->
   </div>
   </div>
-<div class="observablehq observablehq--block"><!--:763a6706:--></div>
+<div class="observablehq observablehq--block"><!--:2cc38a81:--></div>
 <div class="observablehq observablehq--block"><!--:b1f37aaa:--></div>
 <div class="grid grid-cols-1">
 <div class="card" style="height: 500px;">
