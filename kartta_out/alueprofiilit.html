@@ -15,8 +15,8 @@
 <link rel="modulepreload" href="./_observablehq/client.455af412.js">
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.313a6eb4.js">
-<link rel="modulepreload" href="./_import/components/data_indikaattori.927981e8.js">
-<link rel="modulepreload" href="./_import/components/alueprofiilit.ddcbc45c.js">
+<link rel="modulepreload" href="./_import/components/data_indikaattori.a53cfad0.js">
+<link rel="modulepreload" href="./_import/components/alueprofiilit.649ba872.js">
 <link rel="modulepreload" href="./_observablehq/stdlib/inputs.c9e8879a.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/bab36a37.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
@@ -67,21 +67,21 @@
 import {define} from "./_observablehq/client.455af412.js";
 import {registerFile} from "./_observablehq/stdlib.313a6eb4.js";
 
-registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.d39c2513.csv","lastModified":1741954691512,"size":2398242});
-registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.d6897c57.csv","lastModified":1741954693789,"size":31089699});
-registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741954699384,"size":50473});
-registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741954690117,"size":10701});
-registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.00d599ff.json","lastModified":1741954697626,"size":38750});
-registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741954696013,"size":257003});
+registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.d39c2513.csv","lastModified":1741964499493,"size":2398242});
+registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.d6897c57.csv","lastModified":1741964501683,"size":31089699});
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741964507360,"size":50473});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741964498014,"size":10701});
+registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.00d599ff.json","lastModified":1741964505575,"size":38750});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741964503992,"size":257003});
 
 define({id: "1f59904c", outputs: ["df","InputRegioLevel","df_aikasarja","region_levels","df_region","df_kuntalist","all_var_class"], body: async () => {
-const {df, InputRegioLevel, df_aikasarja, region_levels, df_region, df_kuntalist, all_var_class} = await import("./_import/components/data_indikaattori.927981e8.js");
+const {df, InputRegioLevel, df_aikasarja, region_levels, df_region, df_kuntalist, all_var_class} = await import("./_import/components/data_indikaattori.a53cfad0.js");
 
 return {df,InputRegioLevel,df_aikasarja,region_levels,df_region,df_kuntalist,all_var_class};
 }});
 
 define({id: "6398047b", outputs: ["alueprofDivvi","df_alueprofiilit","alueprofAikasarja","unsafe_html","alueprofTaulukko","alueprofKartta","indicator_list"], body: async () => {
-const {alueprofDivvi, df_alueprofiilit, alueprofAikasarja, unsafe_html, alueprofTaulukko, alueprofKartta, indicator_list} = await import("./_import/components/alueprofiilit.ddcbc45c.js");
+const {alueprofDivvi, df_alueprofiilit, alueprofAikasarja, unsafe_html, alueprofTaulukko, alueprofKartta, indicator_list} = await import("./_import/components/alueprofiilit.649ba872.js");
 
 return {alueprofDivvi,df_alueprofiilit,alueprofAikasarja,unsafe_html,alueprofTaulukko,alueprofKartta,indicator_list};
 }});
