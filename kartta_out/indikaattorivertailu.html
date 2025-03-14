@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.2">
+<title>Indikaattorivertailu | Etusivu</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/custom.70e5aa69.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/custom.70e5aa69.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="./_observablehq/client.455af412.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.313a6eb4.js">
+<link rel="modulepreload" href="./_import/components/data_indikaattori.927981e8.js">
+<link rel="modulepreload" href="./_import/components/alueprofiilit.ddcbc45c.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/2d3d6de5.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.c9e8879a.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/bab36a37.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_npm/underscore@1.13.7/2be59dd5.js">
+<link rel="modulepreload" href="./_npm/arquero@8.0.1/8362639c.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9f467835.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/37839b6a.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/bd0afa17.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/6ac7d65c.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/6821f0c1.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/d496a3b3.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/c1ddf721.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/ef06b1ff.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/d9a18fcf.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/60bb70b3.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/33fb7288.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/5e427f4b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/7e45aaba.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/435d3e9d.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/6a41b56e.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/a4e530fb.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/be692bd9.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3a9ac1c1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/28d1ef76.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/5c345eab.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/6bf2ba81.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.1/53fec404.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<meta property="og:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta property="og:url" content="https://karttasovellus.diak.fi"><meta property="og:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta property="og:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta name="twitter:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" href="./_file/favicon.029d5f16.ico" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.455af412.js";
+import {registerFile} from "./_observablehq/stdlib.313a6eb4.js";
+
+registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.d39c2513.csv","lastModified":1741954691512,"size":2398242});
+registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.d6897c57.csv","lastModified":1741954693789,"size":31089699});
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741954699384,"size":50473});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741954690117,"size":10701});
+registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.00d599ff.json","lastModified":1741954697626,"size":38750});
+registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.4b719856.json","lastModified":1741954705452,"size":62206});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741954696013,"size":257003});
+
+define({id: "242ceb10", outputs: ["df","InputRegioLevel","indicator_list","SelYear","df_aikasarja","region_levels","financial1","df_region","df_kuntalist","all_var_class","unsafe_html"], body: async () => {
+const [{df, InputRegioLevel, indicator_list, SelYear, df_aikasarja, region_levels, financial1, df_region, df_kuntalist, all_var_class}, {unsafe_html}] = await Promise.all([import("./_import/components/data_indikaattori.927981e8.js"), import("./_import/components/alueprofiilit.ddcbc45c.js")]);
+
+return {df,InputRegioLevel,indicator_list,SelYear,df_aikasarja,region_levels,financial1,df_region,df_kuntalist,all_var_class,unsafe_html};
+}});
+
+define({id: "19560720", inputs: ["FileAttachment"], outputs: ["df_muuttujakuvaukset"], body: async (FileAttachment) => {
+const df_muuttujakuvaukset = await FileAttachment("./data/df_muuttujakuvaukset.json").json("typed")
+return {df_muuttujakuvaukset};
+}});
+
+define({id: "d965afd2", inputs: ["unsafe_html","meta","display"], body: async (unsafe_html,meta,display) => {
+display(await(
+unsafe_html`<div class="note" label = "Metatiedot">
+${meta[0].link}
+<br/>
+<br/>
+<em>${meta[0].description}</em>
+</div>`
+))
+}});
+
+define({id: "5e4ea3fb", inputs: ["Generators","InputRegioLevel","Inputs","all_var_class"], outputs: ["selected_regio_level","InputVarClass","selected_var_class"], body: (Generators,InputRegioLevel,Inputs,all_var_class) => {
+const selected_regio_level = Generators.input(InputRegioLevel);
+
+
+
+const InputVarClass = Inputs.select(all_var_class, {
+                  //label: "muuttujaluokka",
+                  value: all_var_class[0]});
+const selected_var_class = Generators.input(InputVarClass);
+
+return {selected_regio_level,InputVarClass,selected_var_class};
+}});
+
+define({id: "9e01d9de", inputs: ["Inputs","all_variable","Generators"], outputs: ["InputVar","selected_variable"], body: (Inputs,all_variable,Generators) => {
+const InputVar = Inputs.select(all_variable, {
+                  //label: "muuttujaluokka",
+                  value: all_variable[0]});
+const selected_variable = Generators.input(InputVar);
+return {InputVar,selected_variable};
+}});
+
+define({id: "a3a0b544", inputs: ["Generators","SelYear"], outputs: ["selectedYear"], body: (Generators,SelYear) => {
+const selectedYear = Generators.input(SelYear);
+return {selectedYear};
+}});
+
+define({id: "adb59e83", inputs: ["selected_regio_level"], outputs: ["scope_choices"], body: (selected_regio_level) => {
+let scope_choices
+if (selected_regio_level == "Kunnat"){
+  scope_choices = ["kaikki tason alueet","valittu alue ja sen naapurit"]
+} else {
+  scope_choices = ["kaikki tason alueet","valittu alue ja sen naapurit","valitun alueen kunnat"]
+}
+
+return {scope_choices};
+}});
+
+define({id: "a0a0879e", inputs: ["Inputs","scope_choices","Generators"], outputs: ["InputScope","selected_scope"], body: (Inputs,scope_choices,Generators) => {
+const InputScope = Inputs.radio(scope_choices,{value: "kaikki tason alueet"});
+const selected_scope = Generators.input(InputScope);
+return {InputScope,selected_scope};
+}});
+
+define({id: "8a83135a", inputs: ["df","selected_regio_level","Inputs","Generators"], outputs: ["regNames","InputRegion","selected_region"], body: (df,selected_regio_level,Inputs,Generators) => {
+var regNames = [... new Set(df.filter(d => d.regio_level == selected_regio_level).map(d => d.aluenimi))];
+
+const InputRegion = Inputs.select(regNames.sort());
+const selected_region = Generators.input(InputRegion);
+return {regNames,InputRegion,selected_region};
+}});
+
+define({id: "2f9c53da", inputs: ["df","selected_var_class"], outputs: ["all_variable"], body: (df,selected_var_class) => {
+const all_variable = [... new Set(df.filter(d => d.var_class == selected_var_class).map(x=>x.variable))];
+return {all_variable};
+}});
+
+define({id: "8138b8ed", body: () => {
+//display(df_region.features)
+}});
+
+define({id: "994f1556", body: () => {
+//display(region_subset_names)
+}});
+
+define({id: "2ae32c3f", inputs: ["df_aikasarja","selectedYear","df_region","selected_regio_level","selected_scope","selected_region","selected_var_class","selected_variable","df_kuntalist"], outputs: ["df_plot","df_plot_aikasarja","df_region_ss","region_subset_names","df_plot_select","df_region_ss_select","df_plot_aikasarja_select"], body: (df_aikasarja,selectedYear,df_region,selected_regio_level,selected_scope,selected_region,selected_var_class,selected_variable,df_kuntalist) => {
+// subsetit
+var df_plot = df_aikasarja.filter(d => d.aika == selectedYear)
+let df_plot_aikasarja
+let df_region_ss = df_region.features.filter(d => d.properties.level == selected_regio_level);
+// naapurit
+let region_subset_names
+if (selected_scope == "valittu alue ja sen naapurit"){
+  region_subset_names = df_region.features.filter(d => d.properties.region_name == selected_region).map(d => d.properties.neighbours)
+  
+  df_plot = df_aikasarja.filter(d => d.aika == selectedYear && d.var_class == selected_var_class && d.variable == selected_variable && d.regio_level == selected_regio_level && region_subset_names[0].includes(d.aluekoodi))
+  
+  df_plot_aikasarja = df_aikasarja.filter(d => d.var_class == selected_var_class && d.variable == selected_variable && d.regio_level == selected_regio_level && region_subset_names[0].includes(d.aluekoodi))
+  //df_region_ss = df_region.features.filter(d => region_subset_names[0].includes(d.properties.aluekoodi))
+} else if (selected_scope == "valitun alueen kunnat"){
+  region_subset_names = df_kuntalist.filter(d => d[selected_regio_level] ==  selected_region).map(d => d.municipality_code)
+  
+  df_plot = df_aikasarja.filter(d => d.aika == selectedYear && d.var_class == selected_var_class && d.variable == selected_variable && d.regio_level == "Kunnat" && region_subset_names.includes(d.aluekoodi))
+  df_plot_aikasarja = df_aikasarja.filter(d => d.var_class == selected_var_class && d.variable == selected_variable && d.regio_level == "Kunnat" && region_subset_names.includes(d.aluekoodi))
+  df_region_ss = df_region.features.filter(d =>  d.properties.level == "Kunnat")//region_subset_names[0].includes(d.properties.aluekoodi))
+} else {
+  df_plot = df_aikasarja.filter(d => d.aika == selectedYear && d.var_class == selected_var_class && d.variable == selected_variable && d.regio_level == selected_regio_level)
+  df_plot_aikasarja = df_aikasarja.filter(d => d.var_class == selected_var_class && d.variable == selected_variable && d.regio_level == selected_regio_level)
+  
+}
+// Korostukset
+var df_plot_select = df_plot.filter(d => d.aluenimi == selected_region)
+var df_region_ss_select = df_region_ss.filter(d => d.properties.region_name == selected_region)
+var df_plot_aikasarja_select = df_plot_aikasarja.filter(d => d.aluenimi == selected_region)
+return {df_plot,df_plot_aikasarja,df_region_ss,region_subset_names,df_plot_select,df_region_ss_select,df_plot_aikasarja_select};
+}});
+
+define({id: "bf409ebc", body: () => {
+//var df_display = [... new Set(df_aikasarja.map(d => d.var_class))]
+//display(df_display)
+}});
+
+define({id: "c6933f05", inputs: ["df_plot"], outputs: ["map_values"], body: (df_plot) => {
+const map_values = new Map(df_plot.map(({aluekoodi, value}) => [aluekoodi, value]))
+return {map_values};
+}});
+
+define({id: "3009adef", mode: "inline", inputs: ["InputVarClass","display"], body: async (InputVarClass,display) => {
+display(await(
+InputVarClass
+))
+}});
+
+define({id: "429ffdc9", mode: "inline", inputs: ["InputVar","display"], body: async (InputVar,display) => {
+display(await(
+InputVar
+))
+}});
+
+define({id: "c0905fc4", mode: "inline", inputs: ["SelYear","display"], body: async (SelYear,display) => {
+display(await(
+SelYear
+))
+}});
+
+define({id: "ae0c220f", mode: "inline", inputs: ["InputRegioLevel","display"], body: async (InputRegioLevel,display) => {
+display(await(
+InputRegioLevel
+))
+}});
+
+define({id: "878622a2", mode: "inline", inputs: ["InputRegion","display"], body: async (InputRegion,display) => {
+display(await(
+InputRegion
+))
+}});
+
+define({id: "3ab07921", mode: "inline", inputs: ["InputScope","display"], body: async (InputScope,display) => {
+display(await(
+InputScope
+))
+}});
+
+define({id: "e099e467", inputs: ["df_muuttujakuvaukset","selected_variable"], outputs: ["meta"], body: (df_muuttujakuvaukset,selected_variable) => {
+var meta = df_muuttujakuvaukset.filter(d => d.variable == selected_variable)
+//display(meta)
+return {meta};
+}});
+
+define({id: "2ff953d0", mode: "inline", inputs: ["resize","kartta","display"], body: async (resize,kartta,display) => {
+display(await(
+resize((width,height) => kartta(width,height))
+))
+}});
+
+define({id: "7ff6d850", mode: "inline", inputs: ["tolppa","display"], body: async (tolppa,display) => {
+display(await(
+tolppa
+))
+}});
+
+define({id: "2cc38a81", inputs: ["Plot","df_region","selected_variable","selected_regio_level","selectedYear","df_region_ss","financial1","map_values","df_region_ss_select"], outputs: ["kartta"], body: (Plot,df_region,selected_variable,selected_regio_level,selectedYear,df_region_ss,financial1,map_values,df_region_ss_select) => {
+//${
+ function kartta(width,height){ 
+return Plot.plot({
+  projection: {
+    type: "orthographic",
+    rotate: [-27, -52],
+    domain: df_region
+  },
+  width,
+  height:height*.8,
+  ariaLabel: "Kartakuva indikaattorista "  + selected_variable + " aluetasolla " + selected_regio_level + ", vuodelta " + selectedYear,
+  ariaDescription: "Värikäs karttakuva ja sen selitys",
+  title: selected_variable,
+  subtitle: "Aluetasolla " + selected_regio_level + ", vuosi " + selectedYear,
+  marks: [
+    Plot.geo(df_region_ss, 
+             {stroke: "#D2D2D2"
+             }),
+    Plot.geo(df_region_ss, Plot.centroid({
+      //fill: (d) => map_values.get(d.properties.region_code),
+      tip: true,
+      channels: {
+        Alue: d => d.properties.region_name,
+        //Osoitin: d => d.properties.variable,
+        Arvo: (d) => financial1(map_values.get(d.properties.region_code)),
+      }
+    })),         
+    Plot.geo(df_region_ss, 
+         {stroke: "#ffffff80",
+          strokeWidth: 1, 
+          tip: false,
+          fill: (d) => map_values.get(d.properties.region_code)}
+          ),
+Plot.geo(df_region_ss_select, 
+         {stroke: "magenta",
+          strokeWidth: 2, 
+          tip: false,
+          fill: (d) => map_values.get(d.properties.region_code)}
+          ) ,
+              Plot.tip(df_region_ss_select, 
+              Plot.geoCentroid({title: (d) => d.properties.region_name + 
+                                              "\n" + 
+                                              financial1(map_values.get(d.properties.region_code)), 
+                                    anchor: "bottom",
+                                    fillOpacity: 1,
+                                    strokeOpacity: .8,
+                                    stroke: "#000",
+                                    textPadding: 3})) 
+             ],
+
+             
+  //style: {
+  //  fontFamily: "monospace",
+  //  fontSize: "11px",
+  //  overflow: "visible"
+  //},
+/*  style: {
+    fontSize: "1em", 
+    overflow: "visible"
+  },*/
+    color: {
+    scheme: "plasma",
+    type: "sqrt",
+    range: [1, 0],
+    nice: false,
+    legend: true}
+})}
+
+//}
+
+return {kartta};
+}});
+
+define({id: "b1f37aaa", inputs: ["resize","Plot","df_plot","selected_variable","selected_regio_level","selectedYear","d3","df_plot_select","financial1"], outputs: ["tolppa"], body: (resize,Plot,df_plot,selected_variable,selected_regio_level,selectedYear,d3,df_plot_select,financial1) => {
+var tolppa =  resize((width, height) => Plot.plot({
+  //height: height+95,
+  height: 150 + df_plot.length * 18,
+  width: width-95,
+  marginLeft: 120, //420,
+  marginRight: -50, //210,
+  marginTop: 10,
+  marginBottom: 110,
+  ariaLabel: "Palkkikuva indikaattorista "  + selected_variable + " aluetasolla " + selected_regio_level + ", vuodelta " + selectedYear,
+  ariaDescription: "Värikäs palkkikuva ja sen selitys",
+  title: selected_variable,
+  subtitle: "Aluetasolla " + selected_regio_level  + ", vuosi " + selectedYear,
+  y: {
+    domain: d3.sort(df_plot, d => -d.value).map(d => d.aluenimi),
+    label: "",
+    tickSize: 0,
+    padding: 0.15,
+  },
+  x: {
+    grid: true,
+    tickPadding: 10,
+    nice: true,
+    labelOffset: 50,
+    label: "arvo",
+    labelAnchor: "right"//,
+  },
+  color: {
+    range: [1, 0],
+    scheme: "plasma",
+    type: "sqrt",
+    nice: false,
+    legend: false  
+  },
+  marks: [
+    Plot.gridY({
+      stroke: "#dcdcdc",
+      strokeOpacity: 1
+    }),
+/*    Plot.gridX({
+      x: 100,
+      stroke: "#3b0083",
+      strokeOpacity: 1
+    }), */
+    Plot.ruleX({
+      x: 100,
+      y:100,
+      stroke: "#999",
+      strokeOpacity: 1
+    }),
+    Plot.ruleY(df_plot, {
+//      x1: 100,
+      x: "value", 
+      y: "aluenimi", 
+      fill: (d) => d.value,
+      strokeWidth: 2,
+      fontSize: ".6em",
+    }),
+    Plot.dot(df_plot, {
+      x: "value", 
+      y: "aluenimi", 
+      fill: (d) => d.value,
+      stroke: "black",
+      r: 5,
+      fontSize: ".6em",
+    }),
+    Plot.dot(df_plot_select, {
+      x: "value", 
+      y: "aluenimi", 
+      stroke: "magenta",
+      r: 7,
+      fontSize: ".6em",
+    }),
+    Plot.dot(df_plot, {
+      x: "value", 
+      y: "aluenimi", 
+      fill: null,
+      stroke: null,
+      tip: true,
+      channels: {
+        Arvo: (d) => financial1(d.value),
+        //Alue: d => d.aluenimi,
+        Osoitin: d => d.variable//,
+        //Arvo: (d) => map_values.get(d.properties.region_code),
+      }
+    }),
+     Plot.text(df_plot, {
+      x: "value",
+      y: "aluenimi",
+      text: (d) => financial1(d.value),
+      textAnchor: "start",
+      dy: 10,
+      fill: "black"
+    })
+  ]
+}))
+
+//)}
+return {tolppa};
+}});
+
+define({id: "66305c7a", mode: "inline", inputs: ["aikasarja","display"], body: async (aikasarja,display) => {
+display(await(
+aikasarja
+))
+}});
+
+define({id: "ec4058e9", inputs: ["resize","Plot","selected_variable","selected_regio_level","selectedYear","df_plot_aikasarja","df_plot_aikasarja_select"], outputs: ["aikasarja"], body: (resize,Plot,selected_variable,selected_regio_level,selectedYear,df_plot_aikasarja,df_plot_aikasarja_select) => {
+var aikasarja =  resize((width, height) => Plot.plot({
+  //height: height+95,
+  width: width-95,
+  marginLeft: 50, //420,
+  marginRight: 70, //210,
+  marginTop: 10,
+  marginBottom: 110,
+  ariaLabel: "Aikasarjakuva indikaattorista "  + selected_variable + " aluetasolla " + selected_regio_level + ", vuodelta " + selectedYear,
+  ariaDescription: "Värikäs palkkikuva ja sen selitys",
+
+  title: selected_variable,
+  subtitle: "Aluetasolla " + selected_regio_level,
+  color: {
+    nice: true,
+    legend: false  
+  },
+   x: {
+    tickFormat: d => d > Math.floor(d) ? "" : `${d}`,
+    grid: false,
+    zero: false,
+    labelOffset: 20,
+    tickSize: 0
+  },
+   y: {
+    grid: true,
+    zero: false,
+    label: "arvo",
+    labelOffset: 60,
+  },
+
+
+
+  style: {
+    //fontSize: "1em", 
+    overflow: "visible"
+  },
+  marks: [
+    //Plot.ruleY([0]),
+    Plot.ruleX([selectedYear], {stroke: "magenta",strokeWidth: 1}),
+    Plot.lineY(df_plot_aikasarja, {
+      x: "aika", 
+      y: "value", 
+      stroke: "aluenimi",
+      marker: "circle",
+      fontSize: ".6em",
+      tip: true
+    }),
+    Plot.lineY(df_plot_aikasarja_select, {
+      x: "aika", 
+      y: "value", 
+      stroke: "magenta",
+      strokeWidth: 2.5,
+      marker: "circle",
+      fontSize: ".6em",
+      tip: true
+    }),
+    Plot.text(df_plot_aikasarja, Plot.selectLast({x: "aika", y: "value", z: "aluenimi", text: "aluenimi", textAnchor: "start", dx: 3}))
+
+  ]
+}))
+//)}
+return {aikasarja};
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Etusivu</a></li>
+  </ol>
+  <section class="observablehq-section-active">
+    <summary>Huono-osaisuus Suomessa</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./indikaattorivertailu.html">Indikaattorivertailu</a></li>
+    <li class="observablehq-link"><a href="./riippuvuustarkastelut.html">Riippuvuustarkastelut</a></li>
+    <li class="observablehq-link"><a href="./postinumeroalueet.html">Postinumeroalueet</a></li>
+    <li class="observablehq-link"><a href="./alueprofiilit.html">Alueprofiilit</a></li>
+    <li class="observablehq-link"><a href="./data.html">Aineistot</a></li>
+    <li class="observablehq-link"><a href="./saavutettavuus.html">Saavutettavuus</a></li>
+    <li class="observablehq-link"><a href="./changelog.html">Muutokset</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <div style="padding-bottom: -10px;">
+      <span style="font-size: clamp(15px, 2vw, 20px); font-weight: 600; font-family: Montserrat;">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        <a href="./">HUONO-OSAISUUS SUOMESSA (HOS)</a>
+      </span>
+      <span style="font-size: clamp(10px, 1.2vw, 12px); font-weight: 400; font-family: Montserrat; vertical-align: super;">
+        v2.1.0
+      </span>
+    </div>
+    <div><a href="https://diak.fi" target="_blank" rel="noopener noreferrer">
+      <svg width="clamp(130px, 20vw, 200px)" height="clamp(43px, 6.6vw, 66px)" viewBox="0 0 200 33" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <path d="m32.217 31.961h3.7135v-31.298h-3.7135zm-19.972 0h-12.245v-31.298h12.245c9.9467 0 15.65 7.0287 15.65 15.649 0 8.6206-5.7026 15.649-15.649 15.649m11.494-15.649c0-6.5424-4.2441-12.112-11.494-12.112h-8.532v24.225h8.5316c7.2498 0 11.494-5.4816 11.494-12.113m28.062-15.649-12.909 31.298h3.9345l2.2988-5.6145 1.5471-3.5363 6.9406-16.931 6.9401 16.931 1.5033 3.5363 2.2545 5.6145h4.0231l-12.909-31.298zm43.839-0.66305-20.556 11.803v-11.14h-3.7135v31.298h3.7135v-16.091l5.968-3.4925 11.317 19.584h4.1993l-12.334-21.396 13.13-7.6037z" fill="#020002" fill-rule="evenodd" stroke-width=".48682"></path>
+</svg>
+</a>
+    </div>
+  </div>
+
+</header>
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:242ceb10:--></div>
+<div class="observablehq observablehq--block"><!--:19560720:--></div>
+<div class="grid grid-cols-3">
+<div class="grid grid-colspan-2">
+<h1>Indikaattorivertailu</h1>
+<p><strong>Indikaattorivertailun</strong> <em>valitse muuttujaluokka</em> -valikosta voit säädellä haluatko katsoa huono-osaisuuden summatietoja vai tarkemmin kunkin huono-osaisuuden ulottuvuuden osoittimia. <strong>Valitse muuttuja</strong> -valikosta voit valita tarkemman osoittimen ja <strong>valitse aluetaso</strong> -valikosta aluetason.
+Voit myös valita, näkyykö piste-, kartta- ja aikasarjakuviossa:</p>
+<ul>
+<li>kaikki valitun tason alueet,</li>
+<li>valittu alue ja sen naapurit, vai</li>
+<li>valitun hyvinvointialueen kunnat</li>
+</ul>
+</div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:d965afd2:--></div>
+</div>
+<div class="observablehq observablehq--block"><!--:5e4ea3fb:--></div>
+<div class="observablehq observablehq--block"><!--:9e01d9de:--></div>
+<div class="observablehq observablehq--block"><!--:a3a0b544:--></div>
+<div class="observablehq observablehq--block"><!--:adb59e83:--></div>
+<div class="observablehq observablehq--block"><!--:a0a0879e:--></div>
+<div class="observablehq observablehq--block"><!--:8a83135a:--></div>
+<div class="observablehq observablehq--block"><!--:2f9c53da:--></div>
+<div class="observablehq observablehq--block"><!--:8138b8ed:--></div>
+<div class="observablehq observablehq--block"><!--:994f1556:--></div>
+<div class="observablehq observablehq--block"><!--:2ae32c3f:--></div>
+<div class="observablehq observablehq--block"><!--:bf409ebc:--></div>
+<div class="observablehq observablehq--block"><!--:c6933f05:--></div>
+<div class="grid diaknav">
+<details open="" label="avaa">
+<summary>Avaa/sulje valikko</summary>
+<div class="grid grid-cols-2">
+<div class="col">
+<div><strong>Muuttujaluokka</strong><observablehq-loading></observablehq-loading><!--:3009adef:--></div>
+<div><strong>Muuttuja</strong><observablehq-loading></observablehq-loading><!--:429ffdc9:--></div>
+<div><strong>Vuosi</strong><observablehq-loading></observablehq-loading><!--:c0905fc4:--></div>
+</div>
+<div class="col">
+<div><strong>Aluetaso</strong><observablehq-loading></observablehq-loading><!--:ae0c220f:--></div>
+<div><strong>Valitse alue</strong><observablehq-loading></observablehq-loading><!--:878622a2:--></div>
+<div><strong>Kuvioissa näytettävät alueet</strong><observablehq-loading></observablehq-loading><!--:3ab07921:--></div>
+</div>
+</div>
+</details>
+</div>
+<div class="observablehq observablehq--block"><!--:e099e467:--></div>
+<div class="grid grid-cols-2" style="grid-auto-rows: 760px;">
+  <div class="card"> 
+  <observablehq-loading></observablehq-loading><!--:2ff953d0:-->
+  </div>
+  <div class="card grid" style="overflow-y: auto;"> 
+  <observablehq-loading></observablehq-loading><!--:7ff6d850:-->
+  </div>
+  </div>
+<div class="observablehq observablehq--block"><!--:2cc38a81:--></div>
+<div class="observablehq observablehq--block"><!--:b1f37aaa:--></div>
+<div class="grid grid-cols-1">
+<div class="card" style="height: 500px;">
+  <observablehq-loading></observablehq-loading><!--:66305c7a:-->
+</div>
+</div>
+<div class="observablehq observablehq--block"><!--:ec4058e9:--></div>
+<!--div class="grid grid-cols-2" >
+  <div class = "card">
+
+```js
+
+const div = display(document.createElement("div"));
+div.style = "min-height: 560px;";
+div.className = "custom-popup";
+
+const map = L.map(div)
+  .setView([65.5, 25.0],5);
+
+var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 16,
+    attribution: '© OpenStreetMap'});
+
+var ilmakuva = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16,
+    attribution: '© Esri'});
+
+
+var baseMaps = {
+    "OpenStreetMap": osm,
+    "ilmakuva": ilmakuva
+    };
+
+var layerControl = L.control.layers(baseMaps).addTo(map);
+
+map.addLayer(osm);
+
+L.geoJSON(dfLeaflet, {style: style}).addTo(map);
+
+['#ffffcc','#c7e9b4','#7fcdbb','#41b6c4','#2c7fb8','#253494']
+
+function getColor(d) {
+    return d > 150  ? '#ffffcc' :
+           d > 125  ? '#c7e9b4' :
+           d > 100   ? '#7fcdbb' :
+           d > 70   ? '#41b6c4' :
+           d > 50   ? '#2c7fb8' :
+                      '#253494';
+}
+
+function style(feature) {
+    return {
+        fillColor: getColor(feature.properties.value),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 1
+    };
+}
+
+
+// vuorovaikutusta
+
+function highlightFeature(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        weight: 2,
+        color: '#969696',
+        dashArray: '',
+        fillOpacity: 1
+    });
+
+    layer.bringToFront();
+    info.update(layer.feature.properties);
+}
+
+function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+    info.update();
+}
+
+
+var geojson;
+// ... our listeners
+//var geojson = L.geoJson(...);
+
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+}
+
+
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,
+        click: zoomToFeature
+    });
+}
+
+geojson = L.geoJson(dfLeaflet, {
+    style: style,
+    onEachFeature: onEachFeature
+}).addTo(map);
+
+// labelit
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+// method that we will use to update the control based on feature properties passed
+info.update = function (props) {
+    this._div.innerHTML = (props ? '<h4>' + props.variable + '</h4>' + '<b>' + props.region_name + '</b><br />' + props.value + ' '
+        : 'Hover over a state');
+};
+
+info.addTo(map);
+
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 50, 75, 100, 125, 150],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map);
+
+```
+
+-->
+<script defer="" data-domain="karttasovellus.diak.fi" src="https://plausible.vaphana.com/js/script.js"></script>
+</main>
+<footer id="observablehq-footer">
+<div><div class="grid grid-cols-2" style="display:flex; align-items: center; justify-content: space-between; background-color: #271143; min-height: 120px;"><div><img src="https://www.diak.fi/wp-content/themes/diak/dist/images/diak-logo-2.svg" width="200px" style="padding: 20px;" alt="Diak-ammattikorkeakoulun logo"></div><div style="color: white; text-align: center; margin-top: 20px; margin-bottom: auto; ">Diakonia-ammattikorkeakoulu<br>PL 12, 00511 Helsinki </div><div></div></div></div>
+</footer>
+</div>
+</body>
+</html>

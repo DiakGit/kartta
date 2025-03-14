@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.2">
+<title>Aineistot | Etusivu</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/custom.70e5aa69.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/custom.70e5aa69.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="./_observablehq/client.455af412.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.313a6eb4.js">
+<link rel="modulepreload" href="./_import/components/alueprofiilit.ddcbc45c.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.c9e8879a.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/bab36a37.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/2d3d6de5.js">
+<link rel="modulepreload" href="./_npm/underscore@1.13.7/2be59dd5.js">
+<link rel="modulepreload" href="./_npm/arquero@8.0.1/8362639c.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/37839b6a.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/bd0afa17.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/6ac7d65c.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/6821f0c1.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/d496a3b3.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/c1ddf721.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/ef06b1ff.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9f467835.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/d9a18fcf.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/60bb70b3.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/33fb7288.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/5e427f4b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/7e45aaba.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/435d3e9d.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/6a41b56e.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/a4e530fb.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/be692bd9.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3a9ac1c1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/28d1ef76.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/5c345eab.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/6bf2ba81.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.1/53fec404.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<meta property="og:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta property="og:url" content="https://karttasovellus.diak.fi"><meta property="og:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta property="og:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta name="twitter:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" href="./_file/favicon.029d5f16.ico" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.455af412.js";
+import {registerFile} from "./_observablehq/stdlib.313a6eb4.js";
+
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1741954699384,"size":50473});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.b73699d7.json","lastModified":1741954690117,"size":10701});
+registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.4b719856.json","lastModified":1741954705452,"size":62206});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1741954696013,"size":257003});
+
+define({id: "6fc88545", outputs: ["unsafe_html"], body: async () => {
+const {unsafe_html} = await import("./_import/components/alueprofiilit.ddcbc45c.js");
+
+return {unsafe_html};
+}});
+
+define({id: "3150a70f", inputs: ["FileAttachment"], outputs: ["df_muuttujakuvaukset"], body: async (FileAttachment) => {
+const df_muuttujakuvaukset = await FileAttachment("./data/df_muuttujakuvaukset.json").json("typed")
+
+return {df_muuttujakuvaukset};
+}});
+
+define({id: "80f2121e", inputs: ["df_muuttujakuvaukset"], outputs: ["all_varclass"], body: (df_muuttujakuvaukset) => {
+const all_varclass = [... new Set(df_muuttujakuvaukset.map(x=>x.var_class))];
+return {all_varclass};
+}});
+
+define({id: "d3a683eb", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[0]
+))
+}});
+
+define({id: "45fcb25e", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[0]), {
+  rows: 50,
+  columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+))
+}});
+
+define({id: "dc972ca7", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[1]
+))
+}});
+
+define({id: "0abf8b3c", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[1]), {
+   rows: 50,
+   columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+))
+}});
+
+define({id: "abb2809e", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[2]
+))
+}});
+
+define({id: "f08b8bd0", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[2]), {
+  rows: 50,
+  columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+
+))
+}});
+
+define({id: "b4d95e09", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[3]
+))
+}});
+
+define({id: "de1094d2", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[3]), {
+  rows: 50,
+  columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+
+))
+}});
+
+define({id: "30fb523f", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[4]
+))
+}});
+
+define({id: "3365ec77", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[4]), {
+  rows: 50,
+  columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+
+))
+}});
+
+define({id: "f154095f", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[5]
+))
+}});
+
+define({id: "f9caa896", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[5]), {
+  rows: 50,
+  columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+
+))
+}});
+
+define({id: "d1f432a4", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[6]
+))
+}});
+
+define({id: "813d096c", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[6]), {
+  rows: 38,
+  columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+
+))
+}});
+
+define({id: "32ae17ff", mode: "inline", inputs: ["all_varclass","display"], body: async (all_varclass,display) => {
+display(await(
+all_varclass[7]
+))
+}});
+
+define({id: "8df02fcf", inputs: ["Inputs","df_muuttujakuvaukset","all_varclass","htl","unsafe_html","display"], body: async (Inputs,df_muuttujakuvaukset,all_varclass,htl,unsafe_html,display) => {
+display(await(
+Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[7]), {
+  rows: 129,
+  columns: ["variable", "link","regio_level", "description"],
+  width: {
+    variable: "20%",
+    link: "20%",
+    regio_level: "10%",
+    description: "50%",
+  },
+  format: {
+    variable: d => htl.html`<span style="white-space:normal">${d}`,
+    link: d => unsafe_html`<span style="white-space:normal">${d}`,
+    description: d => htl.html`<span style="white-space:normal">${d}`,
+  },
+})
+
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Etusivu</a></li>
+  </ol>
+  <section class="observablehq-section-active">
+    <summary>Huono-osaisuus Suomessa</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./indikaattorivertailu.html">Indikaattorivertailu</a></li>
+    <li class="observablehq-link"><a href="./riippuvuustarkastelut.html">Riippuvuustarkastelut</a></li>
+    <li class="observablehq-link"><a href="./postinumeroalueet.html">Postinumeroalueet</a></li>
+    <li class="observablehq-link"><a href="./alueprofiilit.html">Alueprofiilit</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./data.html">Aineistot</a></li>
+    <li class="observablehq-link"><a href="./saavutettavuus.html">Saavutettavuus</a></li>
+    <li class="observablehq-link"><a href="./changelog.html">Muutokset</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <div style="padding-bottom: -10px;">
+      <span style="font-size: clamp(15px, 2vw, 20px); font-weight: 600; font-family: Montserrat;">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        <a href="./">HUONO-OSAISUUS SUOMESSA (HOS)</a>
+      </span>
+      <span style="font-size: clamp(10px, 1.2vw, 12px); font-weight: 400; font-family: Montserrat; vertical-align: super;">
+        v2.1.0
+      </span>
+    </div>
+    <div><a href="https://diak.fi" target="_blank" rel="noopener noreferrer">
+      <svg width="clamp(130px, 20vw, 200px)" height="clamp(43px, 6.6vw, 66px)" viewBox="0 0 200 33" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <path d="m32.217 31.961h3.7135v-31.298h-3.7135zm-19.972 0h-12.245v-31.298h12.245c9.9467 0 15.65 7.0287 15.65 15.649 0 8.6206-5.7026 15.649-15.649 15.649m11.494-15.649c0-6.5424-4.2441-12.112-11.494-12.112h-8.532v24.225h8.5316c7.2498 0 11.494-5.4816 11.494-12.113m28.062-15.649-12.909 31.298h3.9345l2.2988-5.6145 1.5471-3.5363 6.9406-16.931 6.9401 16.931 1.5033 3.5363 2.2545 5.6145h4.0231l-12.909-31.298zm43.839-0.66305-20.556 11.803v-11.14h-3.7135v31.298h3.7135v-16.091l5.968-3.4925 11.317 19.584h4.1993l-12.334-21.396 13.13-7.6037z" fill="#020002" fill-rule="evenodd" stroke-width=".48682"></path>
+</svg>
+</a>
+    </div>
+  </div>
+
+</header>
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:6fc88545:--></div>
+<h1 id="aineistot" tabindex="-1"><a class="observablehq-header-anchor" href="#aineistot">Aineistot</a></h1>
+<p>Sovellus hyödyntää <a class="diaklink" target="_blank" href="https://stat.fi/org/avoindata/index.html" rel="noopener noreferrer">Tilastokeskuksen</a>, THL:n <a class="diaklink" target="_blank" href="https://sotkanet.fi/sotkanet/fi/index" rel="noopener noreferrer">Sotkanetin</a> ja <a class="diaklink" target="_blank" href="https://www.avoindata.fi/data/fi/organization/kela" rel="noopener noreferrer">Kelan</a> avointa dataa. Data on poimittu kesäkuun 1. 2024.</p>
+<h2 id="aineistojen-lataaminen" tabindex="-1"><a class="observablehq-header-anchor" href="#aineistojen-lataaminen">Aineistojen lataaminen</a></h2>
+<p><strong>Indikaattori- ja paikkatietoaineistot</strong></p>
+<table>
+<thead>
+<tr>
+<th>linkki</th>
+<th>tyyppi</th>
+<th>aluetaso</th>
+<th>tiedostomuoto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="diaklink" href="./_file/data/df.d39c2513.csv" download="">df.csv</a></td>
+<td>uusin poikkileikkausaineisto</td>
+<td>kunta/hyvinvointialue</td>
+<td><code>.csv</code></td>
+</tr>
+<tr>
+<td><a class="diaklink" href="./_file/data/df_aikasarja.d6897c57.csv" download="">df_aikasarja.csv</a></td>
+<td>aikasarjadata</td>
+<td>kunta/hyvinvointialue</td>
+<td><code>.csv</code></td>
+</tr>
+<tr>
+<td><a class="diaklink" href="./_file/data/df_region.ae39e874.json" download="">df_region.json</a></td>
+<td>aluerajat</td>
+<td>kunta/hyvinvointialue</td>
+<td><code>.json</code></td>
+</tr>
+<tr>
+<td><a class="diaklink" href="./_file/data/dfzip.3509e648.csv" download="">dfzip.csv</a></td>
+<td>uusin poikkileikkausaineisto</td>
+<td>postinumeroalue</td>
+<td><code>.csv</code></td>
+</tr>
+<tr>
+<td><a class="diaklink" href="./_file/data/dfzip_aikasarja.3453e696.csv" download="">dfzip_aikasarja.csv</a></td>
+<td>aikasarjadata</td>
+<td>postinumeroalue</td>
+<td><code>.csv</code></td>
+</tr>
+<tr>
+<td><a class="diaklink" href="./_file/data/dfzip_region.b105a54c.json" download="">dfzip_region.json</a></td>
+<td>aluerajat</td>
+<td>postinumeroalue</td>
+<td><code>.json</code></td>
+</tr>
+<tr>
+<td><a class="diaklink" href="./_file/data/df_muuttujakuvaukset.4b719856.json" download="">df_muuttujakuvaukset.json</a></td>
+<td>muuttujakuvaukset</td>
+<td>kunta/hyvinvointialue/postinumeroalue</td>
+<td><code>.json</code></td>
+</tr>
+</tbody>
+</table>
+<div class="tip" label="Dataa voi käyttää vapaasti!">
+ <p xmlns:cc="http://creativecommons.org/ns#">Aineisto on lisensoitu <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p> 
+</div>
+<hr>
+<h2 id="muuttujakuvaukset" tabindex="-1"><a class="observablehq-header-anchor" href="#muuttujakuvaukset">Muuttujakuvaukset</a></h2>
+<div class="observablehq observablehq--block"><!--:3150a70f:--></div>
+<div class="observablehq observablehq--block"><!--:80f2121e:--></div>
+<h3 id="" tabindex="-1"><a class="observablehq-header-anchor" href="#"><observablehq-loading></observablehq-loading><!--:d3a683eb:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:45fcb25e:--></div>
+<h3 id="-1" tabindex="-1"><a class="observablehq-header-anchor" href="#-1"><observablehq-loading></observablehq-loading><!--:dc972ca7:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:0abf8b3c:--></div>
+<h3 id="-2" tabindex="-1"><a class="observablehq-header-anchor" href="#-2"><observablehq-loading></observablehq-loading><!--:abb2809e:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f08b8bd0:--></div>
+<h3 id="-3" tabindex="-1"><a class="observablehq-header-anchor" href="#-3"><observablehq-loading></observablehq-loading><!--:b4d95e09:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:de1094d2:--></div>
+<h3 id="-4" tabindex="-1"><a class="observablehq-header-anchor" href="#-4"><observablehq-loading></observablehq-loading><!--:30fb523f:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:3365ec77:--></div>
+<h3 id="-5" tabindex="-1"><a class="observablehq-header-anchor" href="#-5"><observablehq-loading></observablehq-loading><!--:f154095f:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f9caa896:--></div>
+<h3 id="-6" tabindex="-1"><a class="observablehq-header-anchor" href="#-6"><observablehq-loading></observablehq-loading><!--:d1f432a4:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:813d096c:--></div>
+<h3 id="-7" tabindex="-1"><a class="observablehq-header-anchor" href="#-7"><observablehq-loading></observablehq-loading><!--:32ae17ff:--></a></h3>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:8df02fcf:--></div>
+<script defer="" data-domain="karttasovellus.diak.fi" src="https://plausible.vaphana.com/js/script.js"></script>
+</main>
+<footer id="observablehq-footer">
+<div><div class="grid grid-cols-2" style="display:flex; align-items: center; justify-content: space-between; background-color: #271143; min-height: 120px;"><div><img src="https://www.diak.fi/wp-content/themes/diak/dist/images/diak-logo-2.svg" width="200px" style="padding: 20px;" alt="Diak-ammattikorkeakoulun logo"></div><div style="color: white; text-align: center; margin-top: 20px; margin-bottom: auto; ">Diakonia-ammattikorkeakoulu<br>PL 12, 00511 Helsinki </div><div></div></div></div>
+</footer>
+</div>
+</body>
+</html>
